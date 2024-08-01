@@ -5,14 +5,10 @@
 from typing import Any, List, Tuple
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
-    """ Iterate and zoom in through a list 2x """
-    zoomed_in: List = [
-        item for item in lst
-        for i in range(factor)
-    ]
+def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
+    """Scales an array by a given factor."""
+    zoomed_in: List[int] = [item for item in lst for _ in range(factor)]
     return zoomed_in
-
 
 array = [12, 72, 91]
 
