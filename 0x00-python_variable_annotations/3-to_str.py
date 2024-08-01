@@ -2,6 +2,7 @@
 
 """Floor."""
 
+
 def to_str(n: float) -> str:
     """Finds the floor of a number.
 
